@@ -32,15 +32,21 @@
       margin-right: auto;
       margin-top: 12%;
     }
+
     .card {
       background-color: white;
       height: 450px;
       width: 330px;
       border-radius: 5%;
       border: 1px solid black;
+      box-shadow: 8px 8px 2px 1px hsl(0, 0%, 7%);
+    }
+    .card:active {
       box-shadow: 12px 12px 2px 1px hsl(0, 0%, 7%);
     }
+
     .learning_style {
+      font-weight: 800;
       font-family: 'font-one';
       font-size: medium;
       margin-left: 5%;
@@ -51,15 +57,23 @@
     }
 
     .publish_style {
+      font-weight: 500;
       font-family: 'font-one';
       font-size: small;
       margin-left: 5%;
     }
 
     .foundation_style {
+      font-weight: 800;
       font-family: 'font-two';
       font-size: larger;
       margin-left: 5%;
+      color: hsl(0, 0%, 7%);
+    }
+    .foundation_style:hover {
+      color: hsl(47, 88%, 63%);
+      cursor: pointer;
+      /* .card:active */
     }
 
     .language_style {
@@ -71,12 +85,20 @@
     }
 
     .profil_style {
-      font-weight: bolder;
+      font-weight: 800;
       font-family: 'font-one';
       font-size: small;
       margin-left: 5%;
       display: flex;
       align-items: center;
+    }
+
+    @media screen and (max-width: 380px) {
+      .center {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30%;
+    }
     }
   </style>
 </head>
@@ -85,12 +107,9 @@
   <div class="card center" >
     <img src="./assets/images/illustration-article.svg" alt="les illustrations" style="width: 90%; border-radius: 5%; margin-left: 5%; margin-top: 5%;" >
     <h2 class="learning_style" >Learning</h2>
-    <!-- <strong> -->
-      <p class="publish_style" >Published 21 Dec 2023</p>
-    <!-- </strong> -->
-     <strong>
-      <h2 class="foundation_style" >HTML & CSS foundations</h2>
-     </strong>
+    <p class="publish_style" >Published 21 Dec 2023</p>
+    <a href=""></a>
+    <h2 class="foundation_style" >HTML & CSS foundations</h2>
     <p class="language_style" >These languages are the backbone of every website, defining structure, content, and presentation.</p>
     <div class="profil_style">
       <img src="./assets/images/image-avatar.webp" alt="" style="width: 12%;" >
